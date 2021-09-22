@@ -1,13 +1,12 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
+import SignIn from './Pages/SignIn';
+
 function App() {
   return (
     <div className="App">
-      <h1>Test message from twitter project</h1>
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
+      <SignIn></SignIn>
     </div>
   );
 }
