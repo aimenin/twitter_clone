@@ -1,12 +1,16 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 
-import SignIn from './Pages/SignIn';
+import { SignIn } from './Pages/SignIn';
+import { Home } from './Pages/Home';
+import { Route, Switch } from 'react-router';
 
 function App() {
   return (
     <div className="App">
-      <SignIn></SignIn>
+      <Switch>
+        <Route path="/signin" component={SignIn} />
+        <Route path="/home" component={Home} />
+      </Switch>
     </div>
   );
 }

@@ -43,8 +43,8 @@ export const useStylesSignIn = makeStyles((theme) => ({
     left: '50%',
     top: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '350%',
-    height: '350%',
+    width: '260%',
+    height: '260%',
   },
   loginSide: {
     flex: '0 0 50%',
@@ -75,7 +75,7 @@ export const useStylesSignIn = makeStyles((theme) => ({
   },
 }));
 
-const SignIn = () => {
+export const SignIn: React.FC = (): React.ReactElement => {
   const classes = useStylesSignIn();
 
   const [visibleModal, setVisibleModal] = React.useState<'signIn' | 'signUp'>();
@@ -208,5 +208,3 @@ const SignIn = () => {
     </div>
   );
 }
-
-export default SignIn;
